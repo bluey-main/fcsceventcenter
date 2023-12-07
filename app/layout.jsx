@@ -1,6 +1,6 @@
 import { Inter, Lato } from 'next/font/google'
 import './globals.css'
-import Navbar from './global/Navbar'
+import Navbar from './components/global/Navbar'
 
 const lato = Lato({ weight:['300','400', '700'], subsets: ['latin'] })
 

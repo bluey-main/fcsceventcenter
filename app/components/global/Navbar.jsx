@@ -51,11 +51,11 @@ const Navbar = () => {
         />
       </div>
       <div
-        className={`lg:w-[70%] w-full h-full lg:px-0 px-8 lg:flex ${
+        className={`lg:w-[70%] w-full h-full lg:px-0 px-8 lg:bg-transparent bg-[#333333]  lg:flex ${
           isOpen ? "flex" : "hidden"
         }`}
       >
-        <ul className="p-6 rounded-lg lg:bg-transparent  w-full lg:h-full flex lg:justify-end lg:gap-x-7  lg:items-center lg:flex-row flex-col text-base text-black  font-[600] gap-y-5">
+        <ul className="p-6 rounded-lg lg:bg-transparent  w-full lg:h-full flex lg:justify-end lg:gap-x-7  lg:items-center lg:flex-row flex-col text-base text-white lg:text-black  font-[600] gap-y-5">
           <Link href={"/"} onClick={closeMenu}>
             <li className="cursor-pointer  p-4 rounded-xl">
               Home
