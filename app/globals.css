@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.transition.animate-slide {
+  transform: translateX(-50%); /* Initial state */
+}
+
+.transition.animate-slide.active {
+  transform: translateX(0); /* Final state after swap */
+}

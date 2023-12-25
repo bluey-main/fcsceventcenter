@@ -1,7 +1,11 @@
-.stroke {
-    text-shadow: 0 0 2px black,
-                 0 2px 2px black,
-                 2px 0 2px black,
-                 2px 2px 2px black;
+.transition {
+    transition: all 0.3s ease-in-out;
   }
   
+  .transition.animate-slide {
+    transform: translateX(-50%); /* Initial state */
+  }
+  
+  .transition.animate-slide.active {
+    transform: translateX(0); /* Final state after swap */
+  }

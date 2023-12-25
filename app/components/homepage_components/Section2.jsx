@@ -7,7 +7,7 @@ const playfair_display = Playfair_Display({weight: ['400', "500", '600'], subset
 
 const Section2 = () => {
   return (
-    <div className={`w-full lg:h-[40vh] h-[60vh] bg-orange-500 flex lg:flex-row flex-col ${playfair_display.className}`}>
+    <div className={`w-full lg:h-[40vh] h-[60vh] bg-orange-500 flex lg:flex-row flex-col ${playfair_display.className} lg:mb-0 mb-20 relative`}>
       <div className="flex-1 bg-[#E9C7DA] h-full p-8">
         <div className="w-full h-full  flex justify-center lg:items-start items-center gap-y-3 flex-col px-6">
         <div className='w-[4rem] h-[4rem] bg-[#C9649B] rounded-full border-white border-4'></div>
