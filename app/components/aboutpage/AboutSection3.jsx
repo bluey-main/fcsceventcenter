@@ -1,18 +1,14 @@
 import React from "react";
+import NameCard from "../homepage_components/components/NameCard";
 import { Playfair_Display } from "next/font/google";
-import NameCard from "./components/NameCard";
 
 const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 
-const Section5 = () => {
+const AboutSection3 = () => {
   return (
     <div className={`w-full h-[110vh] mt-10 `}>
-      <div className="w-full h-[40%] flex flex-col justify-center items-center lg:px-64 gap-y-5">
-        <p className="text-4xl font-bold">Meet Our Executives</p>
-        <p className="lg:text-xl text-lg text-center">
-          Our Executive Team Dedicated to Elevating Your Experience and
-          Fostering a Thriving Community
-        </p>
+      <div className="w-full h-[30%] flex flex-col justify-center items-center lg:px-64 gap-y-5">
+        <p className="text-4xl font-bold">Executives Team</p>
       </div>
 
       <div
@@ -47,4 +43,4 @@ const Section5 = () => {
   );
 };
 
-export default Section5;
+export default AboutSection3;
