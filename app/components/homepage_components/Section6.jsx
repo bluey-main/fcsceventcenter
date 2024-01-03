@@ -2,8 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
-const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 import { useState } from "react";
+
+const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
+
 
 const Section6 = () => {
   let [index, setIndex] = useState(0);
@@ -52,9 +54,9 @@ const Section6 = () => {
   ];
 
   return (
-    <div className="w-full lg:h-screen h-[120vh] bg-orange">
+    <div className="w-full lg:h-screen h-[125vh] bg-orange mt-10">
       <div className="w-full lg:h-[40%] h-[30%] flex flex-col justify-center items-center lg:px-64 gap-y-5 bg-green">
-        <p className="text-4xl font-bold">Hear From Our Members</p>
+        <p className="text-4xl font-bold text-center">Hear From Our Members</p>
         <p className="lg:text-xl text-lg text-center">
         Lorem ipsum dolor sit amet consectetur. Eget ornare metus consequat aliquam enim morbi volutpat
         </p>
@@ -95,7 +97,7 @@ const Section6 = () => {
               </div>
             </div>
             <div className="w-full h-[60%] bg-purple px-3">
-              <p className={`${playFair.className} text-zinc-500 text-lg`}>
+              <p className={`${playFair.className} text-zinc-500 lg:text-lg text-base`}>
                 {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Corrupti itaque laudantium nobis illum expedita? Mollitia
               minima neque dolores, laboriosam, doloribus quod alias,

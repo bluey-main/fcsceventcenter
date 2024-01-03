@@ -1,34 +1,98 @@
 import React from 'react'
 import Image from 'next/image'
+import { Playfair_Display } from 'next/font/google';
+
+
+const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 
 const Footer = () => {
   return (
-    <div className="h-[60vh] w-full bg-[#181818] flex items-center lg:px-14">
-    <div className="w-full h-[70%]  flex flex-col justify-center items-center text-sm">
-      <div className="lg:w-[50%] w-full flex flex-col justify-center items-center">
+    <div className="w-full lg:h-[50vh] h-[90vh] bg-slate flex lg:flex-row flex-col justify-center items-center lg:p-10">
+    <div className="lg:w-[40%] w-full h-[80%] bg-red ">
+      <div className="lg:w-[50%] w-full  h-[25%] bg-yellow">
         <Image
-          src={"/images/fcscLogo.png"}
+          src={"/fcscLogo.png"}
           width={1000}
           height={1000}
-          alt="fcsc logo"
-          className="w-[25rem] h-[6rem] lg:ml-0 ml-[-3rem] scale-75 "
+          alt=""
+          className="w-full h-full"
         />
-        <ul className="p-6 rounded-lg   w-full flex justify-around items-center lg:flex-row flex-col  text-white  gap-y-5">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About Us</li>
-          <li className="cursor-pointer">Gallery</li>
-          <li className="cursor-pointer">Testimonial</li>
-        </ul>
       </div>
-
-      <div className="w-full  flex justify-between items-center lg:flex-row flex-col text-white py-6 border-t-2 border-t-[#ffffff85]">
-        <p className="lg:text-left text-center">© Copyright 2023, All Rights Reserved</p>
-        <div className="flex gap-x-6 flex-row my-5 lg:my-0 gap-y-5 lg:gap-y-0">
-          <p>Support</p>
-          <p>Terms & Conditions</p>
-          <p>Back to top</p>
+      <div className="w-full h-[50%] bg-yellow flex justify-center items-center">
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Aliquam sit sed donec orci
+          varius tristique habitant in donec. At ultrices sagittis
+        </p>
+      </div>
+      <div className="w-full h-[25%] bg-yellow flex gap-x-4">
+        <div className="w-[3rem] h-[60%] bg-pink">
+          <Image
+            src={"/facebook.svg"}
+            width={1000}
+            height={1000}
+            alt=""
+            className="w-full h-full"
+          />
+        </div>
+        <div className="w-[3rem] h-[60%] bg-pink">
+          <Image
+            src={"/instagram.svg"}
+            width={1000}
+            height={1000}
+            alt=""
+            className="w-full h-full"
+          />
+        </div>
+        <div className="w-[3rem] h-[60%] bg-pink">
+          <Image
+            src={"/twitter.svg"}
+            width={1000}
+            height={1000}
+            alt=""
+            className="w-full h-full"
+          />
         </div>
       </div>
+    </div>
+    <div className="lg:w-[60%] w-full h-[80%] bg-green flex justify-end items-center flex-wrap lg:pl-40 ">
+      <div className="h-full flex-1  bg-blue">
+        <div className="w-full h-[25%] bg-violet">
+          <p className="text-2xl">Quick Links</p>
+        </div>
+        <div className={`w-full h-[75%] bg-violet ${playFair.className} flex flex-col gap-y-4`} >
+          <p>Membership</p>
+          <p>Gallery</p>
+          <p>About Us</p>
+          <p>Facilities</p>
+
+        </div>
+
+      </div>
+      <div className="h-full flex-1 bg-blue">
+        <div className="w-full h-[25%] bg-violet">
+          <p className="text-2xl">Facilities</p>
+        </div>
+        <div className={`w-full h-[75%] bg-violet ${playFair.className} flex flex-col gap-y-4`} >
+          <p>Bar and Lounge</p>
+          <p>Sporting</p>
+          <p>Grand Hall</p>
+        </div>
+
+      </div>
+
+      <div className="h-full flex-1 bg-blue">
+        <div className="w-full h-[25%] bg-violet">
+          <p className="text-2xl">Contact</p>
+        </div>
+        <div className={`w-full h-[75%] bg-violet ${playFair.className} flex flex-col gap-y-4`} >
+          <p>08045234568</p>
+          <p>info@ federal.com</p>
+        
+
+        </div>
+
+      </div>
+
     </div>
   </div>
   )
