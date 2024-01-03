@@ -7,9 +7,9 @@ const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 
 const Footer = () => {
   return (
-    <div className="w-full lg:h-[50vh] h-[90vh] bg-slate flex lg:flex-row flex-col justify-center items-center lg:p-10">
+    <div className="w-full lg:h-[50vh] h-[90vh] bg-slate flex lg:flex-row flex-col justify-center items-center lg:p-10 p-6">
     <div className="lg:w-[40%] w-full h-[80%] bg-red ">
-      <div className="lg:w-[50%] w-full  h-[25%] bg-yellow">
+      <div className="lg:w-[50%] w-[80%]  h-[25%] bg-yellow">
         <Image
           src={"/fcscLogo.png"}
           width={1000}
