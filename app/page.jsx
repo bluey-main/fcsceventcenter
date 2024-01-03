@@ -6,8 +6,10 @@ import Section2 from "./components/homepage_components/Section2";
 import Section3 from "./components/homepage_components/Section3";
 import Section4 from "./components/homepage_components/Section4";
 import Section5 from "./components/homepage_components/Section5";
+import Section6 from "./components/homepage_components/Section6";
 
 const crimsonText = Crimson_Text({ weight: "400", subsets: ["latin"] });
+const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -16,7 +18,9 @@ export default function Home() {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5/>
+      <Section5 />
+      <Section6/>
+  
     </main>
   );
 }

@@ -45,6 +45,7 @@ const Navbar = () => {
           src={isOpen ? "/close.svg" : "/hamburgerMenu.svg"}
           width={40}
           height={40}
+          
           alt="HAMBURGER MENU"
           className="lg:hidden transition ease-in-out "
           onClick={toggle}
@@ -58,7 +59,7 @@ const Navbar = () => {
         <ul className="p-6 rounded-lg lg:bg-transparent  w-full lg:h-full flex lg:justify-end lg:gap-x-7  lg:items-center lg:flex-row flex-col text-base text-white lg:text-black  font-[600] gap-y-5">
           <Link href={"/"} onClick={closeMenu}>
             <li className="cursor-pointer  p-4 rounded-xl">
-              Home
+              Home{crypto.randomUUID}
             </li>
           </Link>
           <Link href={"/about"} onClick={closeMenu}>
