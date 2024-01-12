@@ -17,7 +17,7 @@ const MembershipSection1 = () => {
           <div className="w-[0.8%] h-full bg-gray-400 rounded-xl lg:block hidden"></div>
           <div className="lg:w-[95%] w-full h-full  flex flex-col lg:justify-start lg:items-start justify-center items-center gap-y-5 rounded-xl lg:px-10 px-4">
             <p className="lg:text-lg text-lg lg:text-left text-center ">
-              Lorem ipsum dolor sit amet consectetur. Aliquam sit sed donec
+              Lorem ipsum dolor sit amet consectetur. Aliqum sit sed donec
               orci varius tristique habitant in donec. <br /> <br /> At
               ultrices sagittis ac eleifend sit gravida tristique mi cursus.
               Vulputate pellentesque et in id. In tellus rutrum sagittis ut
