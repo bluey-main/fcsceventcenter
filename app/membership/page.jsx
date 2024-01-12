@@ -1,5 +1,5 @@
 import MembershipSection2 from "../components/membershipPage/MembershipSection2";
-import MembershipSection1 from "../components/membershipPage/membershipSection1";
+import MembershipSection1 from "../components/membershipPage/MembershipSection1";
 
 export default function Membership(){
     return(
@@ -7,5 +7,5 @@ export default function Membership(){
         <MembershipSection1/>
         <MembershipSection2/>
       </div>
-    )
+    );
 }
