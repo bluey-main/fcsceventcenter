@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const AboutSection1 = () => {
+const SportingSection1 = () => {
   return (
     <div className="w-full lg:h-screen h-[150vh] flex lg:flex-row flex-col ">
       <div className="lg:w-1/2 w-full lg:h-full h-[35%] flex justify-center items-center">
@@ -11,7 +11,7 @@ const AboutSection1 = () => {
       <div className="lg:w-1/2 w-full lg:h-full h-1/2 flex justify-center items-center">
         <div className="w-full lg:h-[80%] h-full ">
           <div className="w-full lg:h-[20%] h-[30%] flex lg:justify-start  justify-center items-center ">
-            <p className="text-5xl font-semibold">About Us</p>
+            <p className="text-5xl font-semibold text-center">Sporting Facilities</p>
           </div>
           <div className="flex w-full  h-[80%]">
             <div className="w-[0.8%] h-full bg-gray-400 rounded-xl lg:block hidden"></div>
@@ -33,7 +33,7 @@ const AboutSection1 = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutSection1;
+export default SportingSection1

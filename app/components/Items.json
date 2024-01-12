@@ -1,0 +1,18 @@
+{
+    "items":{
+        "responsive":[
+            {
+                "id":1,
+                "image":"/images/event1.jpg"
+            },
+            {
+                "id":2,
+                "image":"/images/event2.jpg"
+            },
+            {
+                "id":3,
+                "image":"/images/event3.jpg"
+            }
+        ]
+    }
+}

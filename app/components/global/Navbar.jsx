@@ -35,17 +35,20 @@ const Navbar = () => {
 
           </div> */}
           <div className="w-[15rem] h-full ">
-            <Image src={'/fcscLogo.png'} width={1000} height={1000} alt="fcsc logo" className="w-full h-full"/>
-
+            <Image
+              src={"/fcscLogo.png"}
+              width={1000}
+              height={1000}
+              alt="fcsc logo"
+              className="w-full h-full"
+            />
           </div>
-          
         </Link>
 
         <Image
           src={isOpen ? "/close.svg" : "/hamburgerMenu.svg"}
           width={40}
           height={40}
-          
           alt="HAMBURGER MENU"
           className="lg:hidden transition ease-in-out "
           onClick={toggle}
@@ -58,28 +61,46 @@ const Navbar = () => {
       >
         <ul className="p-6 rounded-lg lg:bg-transparent  w-full lg:h-full flex lg:justify-end lg:gap-x-7  lg:items-center lg:flex-row flex-col text-base text-white lg:text-black  font-[600] gap-y-5">
           <Link href={"/"} onClick={closeMenu}>
-            <li className="cursor-pointer  p-4 rounded-xl">
-              Home{crypto.randomUUID}
-            </li>
+            <li className="cursor-pointer  p-4 rounded-xl">Home</li>
           </Link>
           <Link href={"/about"} onClick={closeMenu}>
-            <li className="cursor-pointer  p-4 rounded-xl">
-              About Us
-            </li>
+            <li className="cursor-pointer  p-4 rounded-xl">About Us</li>
           </Link>
 
-          <Link href={"/gallery"} onClick={closeMenu}>
-            <li className="cursor-pointer  p-4 rounded-xl">
-              Facilities
-            </li>
-          </Link>
+          <li className="cursor-pointer  p-4 rounded-xl bg-slate  gap-x-1 group ">
+            <div className="flex justify-start items-center gap-x-1">
+              Facilities{" "}
+              <span className="h-[0.8rem] w-[0.8rem] bg-orange mt-[2.3px] lg:bg-[url('/down-arrow.png')] bg-[url('/down-arrow-white.png')]  bg-cover">
+                {/* <Image
+                  src={"/down-arrow.png"}
+                  alt=""
+                  height={1000}
+                  width={1000}
+                  className="w-full h-full"
+                /> */}
+              </span>
+            </div>
+            <ul
+              className={`lg:absolute relative w-48 py-2 flex-col gap-y-2 lg:top-9 text-base lg:right-[22rem] mt-5 lg:bg-[#333333] rounded-lg text-white hidden group-hover:flex`}
+            >
+              <div className="w-full py-2 flex flex-col justify-center items-center lg:gap-y-2 gap-y-6  px-2 ">
+                <Link href={"/sportingfacilities"} onClick={closeMenu}>
+                  <li className="border-b-white border-b-2">
+                    Sporting Facility
+                  </li>
+                </Link>
 
-          <Link href={'/#testimonial'} onClick={closeMenu}>
-          <li className="cursor-pointer  p-4 rounded-xl">
-            Membership
+                <Link href={"/allposts"} onClick={closeMenu}>
+                  <li className="border-b-white border-b-2">Bar & Resturant</li>
+                </Link>
+              </div>
+            </ul>
           </li>
+
+          <Link href={"/membership"} onClick={closeMenu}>
+            <li className="cursor-pointer  p-4 rounded-xl">Membership</li>
           </Link>
-       
+
           <div className="lg:w-[20%] w-full h-full py-10 flex lg:justify-center justify-start items-center">
             <Link href={"/contact"} onClick={closeMenu}>
               <div className="lg:w-[10rem] h-full w-[10rem]  text-white bg-custom-green flex p-3  justify-center items-center gap-x-3 rounded-xl lg:text-base text-base font-semibold">
