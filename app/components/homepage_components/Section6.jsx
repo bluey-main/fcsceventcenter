@@ -2,12 +2,19 @@
 import React from "react";
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section6 = () => {
+  useEffect(() => {
+    AOS.init({
+      once: false,
+    });
+  }, []);
+
   let [index, setIndex] = useState(0);
 
   const incrementIndex = () => {
@@ -56,24 +63,38 @@ const Section6 = () => {
   return (
     <div className="w-full lg:h-screen h-[90vh] bg-orange my-16">
       <div className="w-full lg:h-[40%] h-[30%] flex flex-col justify-center items-center lg:px-64 gap-y-5 bg-green">
-        <p className="text-4xl font-bold text-center">Hear From Our Members</p>
-        <p className="lg:text-xl text-lg text-center">
-        Lorem ipsum dolor sit amet consectetur. Eget ornare metus consequat aliquam enim morbi volutpat
+        <p
+          className="text-4xl font-bold text-center"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
+          Hear From Our Members
+        </p>
+        <p
+          className="lg:text-xl text-lg text-center"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          Lorem ipsum dolor sit amet consectetur. Eget ornare metus consequat
+          aliquam enim morbi volutpat
         </p>
       </div>
 
-      <div className="w-full lg:h-[60%] h-[70%] flex justify-center items-end bg-yellow">
-        <div className="lg:w-[80%] w-[90%] lg:h-[90%] h-[90%] bg-[#FFDAB9] flex justify-center items-center lg:flex-row flex-col gap-x-6 rounded-md overflow-hidden lg:p-0 p-2">
+      <div
+        className="w-full lg:h-[60%] h-[70%] flex justify-center items-end bg-yellow"
+        data-aos="fade-left"
+        data-aos-duration="1300"
+      >
+        <div className="lg:w-[80%] w-[90%] lg:h-[90%] h-[90%] bg-[#FFDAB9] flex justify-between items-center lg:flex-row flex-col gap-x-6 rounded-md overflow-hidden lg:p-0 p-2">
           <div
             className="lg:w-[30%] w-[10rem] lg:h-full h-[10rem] bg-slate-300 lg:rounded-r-[50%] lg:rounded-none rounded-full overflow-hidden"
             style={{
               backgroundImage: `url(${testimonials[index].image})`,
               backgroundSize: "cover",
-              backgroundPosition:"top",
+              backgroundPosition: "top",
               transition: "ease-in-out",
-              transitionBehavior:"allow-discrete",
+              transitionBehavior: "allow-discrete",
               transitionDuration: "1s",
-
             }}
           >
             {/* <Image
@@ -97,7 +118,9 @@ const Section6 = () => {
               </div>
             </div>
             <div className="w-full h-[60%] bg-purple px-3">
-              <p className={`${playFair.className} text-zinc-500 lg:text-lg text-base`}>
+              <p
+                className={`${playFair.className} text-zinc-500 lg:text-lg text-base`}
+              >
                 {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Corrupti itaque laudantium nobis illum expedita? Mollitia
               minima neque dolores, laboriosam, doloribus quod alias,

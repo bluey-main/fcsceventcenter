@@ -17,9 +17,9 @@ const Navbar = () => {
     <nav className="w-full  lg:h-[4rem]  flex lg:flex-row flex-col justify-center items-center lg:px-10 lg:gap-y-0 gap-y-7 fixed top-0 z-50">
       <div className="lg:w-[30%] w-full  justify-between lg:px-0 px-10  flex">
         <Link href={"/"}>
-          {/* <div className="w-full flex justify-center items-center pt-3">
+          <div className="w-full flex justify-center items-center pt-3">
           <Image
-            src={"/images/coatofarms.png"}
+            src={"/coatofarms.png"}
             width={1000}
             height={1000}
             alt="fcsc logo"
@@ -33,8 +33,8 @@ const Navbar = () => {
           
 
 
-          </div> */}
-          <div className="w-[15rem] h-full ">
+          </div>
+          {/* <div className="w-[15rem] h-full ">
             <Image
               src={"/fcscLogo.png"}
               width={1000}
@@ -42,7 +42,7 @@ const Navbar = () => {
               alt="fcsc logo"
               className="w-full h-full"
             />
-          </div>
+          </div> */}
         </Link>
 
         <Image
@@ -90,7 +90,7 @@ const Navbar = () => {
                   </li>
                 </Link>
 
-                <Link href={"/allposts"} onClick={closeMenu}>
+                <Link href={"/bar_and_resturant"} onClick={closeMenu}>
                   <li className="border-b-white border-b-2">Bar & Resturant</li>
                 </Link>
               </div>

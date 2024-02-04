@@ -1,0 +1,5 @@
+{
+    "notebook.stickyScroll.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.stickyScroll.enabled": true
+}

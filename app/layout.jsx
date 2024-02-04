@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={`${lato.className} overflow-x-hidden`}>
         <Navbar/>
         {children}</body>
         <Footer/>

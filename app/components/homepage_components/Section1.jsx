@@ -1,13 +1,29 @@
+'use client'
+import { useEffect } from 'react';
 import React from 'react'
 import Image from 'next/image'
+//import 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+//useEffect
+
 
 const Section1 = () => {
+
+  useEffect(() => {
+    AOS.init({
+      once: false,
+    });
+  }, []);
+
+
   return (
     <div className="w-full lg:h-screen  min-h-screen flex lg:flex-row flex-col  justify-center items-center mb-20">
     <div className="lg:w-1/2 w-full  h-full   flex justify-center lg:items-end items-center ">
       <div className="w-full lg:h-[30rem] h-full  px-10 flex lg:justify-start lg:items-start justify-center items-center flex-col gap-y-8 ">
         <div className="w-full flex justify-center items-center lg:justify-start lg:items-end">
-          <div className="w-[4rem] h-[4rem]">
+          <div className="w-[4rem] h-[4rem]" data-aos = 'fade-right' data-aos-duration="1000">
             <Image
               src={"/01.svg"}
               width={1000}
@@ -19,10 +35,10 @@ const Section1 = () => {
         </div>
 
         <div className="flex flex-col  gap-y-6 text-center lg:text-left">
-          <p className="lg:text-[3.25rem] text-[2.8rem] leading-[3rem] font-bold lg:tracking-tight lg:leading-[4rem] ">
+          <p className="lg:text-[3.25rem] text-[2.8rem] leading-[3rem] font-bold lg:tracking-tight lg:leading-[4rem] " data-aos = 'fade-right' data-aos-duration="1200">
             Embrace unforgettable moments at our thriving social hub
           </p>
-          <p className="font-medium text-lg">
+          <p className="font-medium text-lg" data-aos = 'fade-right' data-aos-duration="1400">
             Explore vibrant connections and shared experiences at the heart
             of our welcoming community
           </p>
@@ -30,13 +46,13 @@ const Section1 = () => {
 
         <div className="flex lg:flex-row flex-col w-full  justify-center items-center gap-y-5">
           <div className="lg:w-[26%] ">
-            <div className="w-[9rem] h-[3.3rem] bg-custom-green rounded-xl flex justify-center items-center gap-x-2 text-white">
+            <div className="w-[9rem] h-[3.3rem] bg-custom-green rounded-xl flex justify-center items-center gap-x-2 text-white" data-aos = 'fade-right' data-aos-duration="1500">
               <p>Join Now</p>
               <p className="font-bold">&#8594;</p>
             </div>
           </div>
 
-          <div className="flex lg:w-[70%]  w-full justify-center items-center gap-x-16">
+          <div className="flex lg:w-[70%]  w-full justify-center items-center gap-x-16" data-aos = 'fade-right' data-aos-duration="1000">
             <div className="relative flex ">
               <div className="w-12 h-12 rounded-full bg-slate-600"></div>
               <div className="w-12 h-12 rounded-full bg-orange-600 absolute translate-x-7"></div>
@@ -51,7 +67,7 @@ const Section1 = () => {
       </div>
     </div>
 
-    <div className="lg:w-1/2 w-full h-full  lg:flex hidden justify-center items-end  ">
+    <div className="lg:w-1/2 w-full h-full  lg:flex hidden justify-center items-end  "  data-aos="fade-up">
       <div className="w-full px-16">
         <div class="grid grid-cols-3 gap-4 ">
           <div class="h-[10rem] bg-orange-500 rounded-xl overflow-hidden">

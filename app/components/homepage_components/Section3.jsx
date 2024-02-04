@@ -1,11 +1,21 @@
 "use client";
-import { Playfair } from "next/font/google";
+import { Playfair, Playfair_Display } from "next/font/google";
 import Image from "next/image";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
-const playFair = Playfair({weight:'400',  subsets:["latin"]})
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const playFair = Playfair_Display({weight:'400',  subsets:["latin"]})
 
 const Section3 = () => {
+
+  useEffect(() => {
+    AOS.init({
+      once: false,
+    });
+  }, []);
+
   const [items, setItems] = useState([
     {
       img: "/images/event1.jpg",
@@ -45,8 +55,8 @@ const Section3 = () => {
     <div className="w-full lg:h-[150vh]  h-[270vh]  mb-20" >
       <div className="w-full lg:h-[20rem] h-[40rem] flex justify-end items-center flex-col lg:gap-y-10 lg:px-0 px-3 mb-16">
         <div className="flex justify-center items-center flex-col lg:w-[60%] w-full h-[40%] gap-y-6">
-          <p className="l:text-4xl text-3xl font-bold">Explore Our Clubhouse</p>
-          <p className="lg:text-xl text-base text-center">
+          <p className={`lg:text-4xl text-3xl font-bold ${playFair.className}`} data-aos = 'fade-up' data-aos-duration="1000">Explore Our Clubhouse</p>
+          <p className="lg:text-xl text-base text-center" data-aos = 'fade-up' data-aos-duration="1000">
             Embark on a journey of unforgettable events, athletic excellence,
             and culinary delights in our premier spaces, tailored for your
             enjoyment
@@ -54,7 +64,7 @@ const Section3 = () => {
         </div>
 
         <div className="w-full flex justify-center items-center">
-          <div className="w-[12rem] h-[3.3rem] border-2 border-black rounded-xl flex justify-center items-center gap-x-2 text-black">
+          <div className="w-[12rem] h-[3.3rem] border-2 border-black rounded-xl flex justify-center items-center gap-x-2 text-black" data-aos = 'fade-up' data-aos-duration="1100">
             <p>See More</p>
           </div>
         </div>
@@ -75,10 +85,13 @@ const Section3 = () => {
               transition: "ease-in-out 0.8s ",
             }}
             onClick={() => handleClick(index)}
+
+            data-aos = 'fade-right' data-aos-duration="1000"
           >
             <div
               className="w-full h-[44%] backdrop-blur-xl flex flex-col"
               style={{ transition: "ease-in-out 0.8s " }}
+              
             >
               <div
                 className="w-full flex-1  flex justify-center items-center"
