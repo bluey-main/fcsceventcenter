@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Crimson_Text, Playfair_Display } from "next/font/google";
-import styles from "./css_modules/styles.modules.css";
 import Section1 from "./components/homepage_components/Section1";
 import Section2 from "./components/homepage_components/Section2";
 import Section3 from "./components/homepage_components/Section3";
