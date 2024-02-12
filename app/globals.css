@@ -36,3 +36,9 @@ body {
 .transition.animate-slide.active {
   transform: translateX(0); /* Final state after swap */
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff0000; /* Set the color you want */
+  font-size: 20px; /* Adjust the font size if needed */
+}

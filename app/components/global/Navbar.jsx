@@ -61,14 +61,14 @@ const Navbar = () => {
       >
         <ul className="p-6 rounded-lg lg:bg-transparent  w-full lg:h-full flex lg:justify-end lg:gap-x-7  lg:items-center lg:flex-row flex-col text-base text-white lg:text-black  font-[600] gap-y-5">
           <Link href={"/"} onClick={closeMenu}>
-            <li className="cursor-pointer  p-4 rounded-xl">Home</li>
+            <li className="cursor-pointer  p-4 rounded-xl text-[#b02f2aff] bg-[#ffffffb6]">Home</li>
           </Link>
           <Link href={"/about"} onClick={closeMenu}>
-            <li className="cursor-pointer  p-4 rounded-xl">About Us</li>
+            <li className="cursor-pointer  p-4 rounded-xl text-[#b02f2aff] bg-[#ffffffb6]">About Us</li>
           </Link>
 
-          <li className="cursor-pointer  p-4 rounded-xl bg-slate  gap-x-1 group ">
-            <div className="flex justify-start items-center gap-x-1">
+          <li className="cursor-pointer  p-4 rounded-xl bg-slate  gap-x-1 group text-[#b02f2aff] bg-[#ffffffb6]">
+            <div className="flex justify-start items-center gap-x-1 ">
               Facilities{" "}
               <span className="h-[0.8rem] w-[0.8rem] bg-orange mt-[2.3px] lg:bg-[url('/down-arrow.png')] bg-[url('/down-arrow-white.png')]  bg-cover">
                 {/* <Image
@@ -91,14 +91,14 @@ const Navbar = () => {
                 </Link>
 
                 <Link href={"/bar_and_resturant"} onClick={closeMenu}>
-                  <li className="border-b-white border-b-2">Bar & Resturant</li>
+                  <li className="border-b-white border-b-2 ">Bar & Resturant</li>
                 </Link>
               </div>
             </ul>
           </li>
 
           <Link href={"/membership"} onClick={closeMenu}>
-            <li className="cursor-pointer  p-4 rounded-xl">Membership</li>
+            <li className="cursor-pointer  p-4 rounded-xl text-[#b02f2aff] bg-[#ffffffb6]">Membership</li>
           </Link>
 
           <div className="lg:w-[20%] w-full h-full py-10 flex lg:justify-center justify-start items-center">
