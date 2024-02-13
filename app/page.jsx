@@ -13,7 +13,7 @@ const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="bg-[#F9F9F9]">
+    <main className="bg-[#F9F9F9] overflow-x-hidden">
       <Section1 />
       <Section2 />
       <Section3 />

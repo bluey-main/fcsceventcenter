@@ -7,7 +7,7 @@ const MembershipSection2 = () => {
   return (
     <div className="w-full lg:h-[90vh] h-[130vh] bg-orange">
     <div className="w-full lg:h-[20%] h-[10%] bg-red flex flex-col justify-center items-center gap-y-3 px-6 ">
-      <p className={`lg:text-5xl text-4xl font-bold ${playFair.className}`}>Rules and Regulation</p>
+      <p className={`lg:text-5xl text-4xl text-center font-bold ${playFair.className}`}>Rules and Regulation</p>
       <p className={`text-lg font-bold ${playFair.className} text-center`}>Where Excellence and Elegance Unite to Elevate Your Event</p>
 
     </div>

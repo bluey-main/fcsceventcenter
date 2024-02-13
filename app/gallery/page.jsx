@@ -52,17 +52,17 @@ export default function Gallery() {
     <div>
       <div className="w-full min-h-screen bg-red-">
         <div
-          className={`w-full h-[20rem] bg-blue-400  ${playFair.className} bg-[url('/images/gallery/galleryHeader.jpg')] bg-cover bg-fixed`}
+          className={`w-full h-[20rem] bg-blue-400  ${playFair.className} bg-[url('/images/gallery/galleryHeader.jpg')] lg:bg-cover bg-contain bg-fixed`}
         >
           <div className="w-full h-full bg-[#000000ab] flex justify-center items-center">
             <h1 className="text-7xl text-white">Gallery</h1>
           </div>
         </div>
 
-        <div className="w-full lg:h-[30rem] h-[60rem] bg-yellow flex lg:px-40 lg:flex-row flex-col">
-          <div className="lg:w-[40%] w-full lg:h-full h-[60%] lg:px-0 px-7 bg-red flex justify-center flex-col gap-y-6">
-            <p className={` text-6xl ${playFair.className}`}>Food</p>
-            <p className='text-xl'>
+        <div className="w-full lg:h-[30rem] h-[50rem] bg-yellow- flex lg:px-40 lg:flex-row flex-col lg:pt-0 pt-10">
+          <div className="lg:w-[40%] w-full lg:h-full h-[30%] lg:px-0 px-7 bg-red- flex justify-center flex-col gap-y-6">
+            <p className={` lg:text-6xl text-5xl text-[#a12f27ff]  ${playFair.className}`}>Food</p>
+            <p className='lg:text-xl text-lg'>
               Get ready to feast at our Bar and Grill&apos;s food spot!
               We&apos;re dishing out all your grill cravings and throwing in
               some local vibes too. From classics to hometown faves, our
@@ -70,7 +70,7 @@ export default function Gallery() {
               time that&apos;s all about good eats and good vibes!
             </p>
           </div>
-          <div className="lg:w-[60%] w-full h-full bg-blue-">
+          <div className="lg:w-[60%] w-full lg:h-full h-[50%] bg-blue-">
             <swiper-container
             style={{
               height:'100%',
@@ -108,6 +108,8 @@ export default function Gallery() {
             </swiper-container>
           </div>
         </div>
+
+        
 
      
         {/* <div className="w-full h-[40rem] bg-yellow-300 flex justify-center items-center px-7">
