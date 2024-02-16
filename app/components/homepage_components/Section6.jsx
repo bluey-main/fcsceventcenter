@@ -75,8 +75,7 @@ const Section6 = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          Lorem ipsum dolor sit amet consectetur. Eget ornare metus consequat
-          aliquam enim morbi volutpat
+          Explore member testimonials on our Federal Civil Service Club&apos;s impact on careers and personal growth. Join us!
         </p>
       </div>
 

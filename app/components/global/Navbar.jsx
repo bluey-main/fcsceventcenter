@@ -81,7 +81,7 @@ const Navbar = () => {
               </span>
             </div>
             <ul
-              className={`lg:absolute relative w-48 py-2 flex-col gap-y-2 lg:top-9 text-base lg:right-[22rem] mt-5 lg:bg-[#333333] rounded-lg text-white hidden group-hover:flex`}
+              className={`lg:absolute relative w-48 py-2 flex-col gap-y-2 lg:top-9 text-base lg:right-[28rem] mt-5 lg:bg-[#333333] rounded-lg text-white hidden group-hover:flex`}
             >
               <div className="w-full py-2 flex flex-col justify-center items-center lg:gap-y-2 gap-y-6  px-2 ">
                 <Link href={"/sportingfacilities"} onClick={closeMenu}>
@@ -99,6 +99,10 @@ const Navbar = () => {
 
           <Link href={"/membership"} onClick={closeMenu}>
             <li className="cursor-pointer  p-4 rounded-xl text-[#b02f2aff] bg-[#ffffffb6]">Membership</li>
+          </Link>
+
+          <Link href={"/gallery"} onClick={closeMenu}>
+            <li className="cursor-pointer  p-4 rounded-xl text-[#b02f2aff] bg-[#ffffffb6]">Gallery</li>
           </Link>
 
           <div className="lg:w-[20%] w-full h-full py-10 flex lg:justify-center justify-start items-center">

@@ -1,41 +1,68 @@
-import React from 'react'
-import { Playfair_Display } from 'next/font/google'
+import React from "react";
+import { Playfair_Display } from "next/font/google";
 
 const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 
 const MembershipSection2 = () => {
   return (
-    <div className="w-full lg:h-[90vh] h-[130vh] bg-orange">
-    <div className="w-full lg:h-[20%] h-[10%] bg-red flex flex-col justify-center items-center gap-y-3 px-6 ">
-      <p className={`lg:text-5xl text-4xl text-center font-bold ${playFair.className}`}>Rules and Regulation</p>
-      <p className={`text-lg font-bold ${playFair.className} text-center`}>Where Excellence and Elegance Unite to Elevate Your Event</p>
+    <div className="w-full lg:min-h-[95vh] h-[130vh] bg-orange- pb-24">
+      <div className="w-full lg:h-[20%] h-[10%] bg-red flex flex-col justify-center items-center gap-y-3 px-6 ">
+        <p
+          className={`lg:text-5xl text-4xl text-center font-bold ${playFair.className}`}
+        >
+          Rules and Regulation
+        </p>
+        <p className={`text-lg font-bold ${playFair.className} text-center`}>
+          Where Excellence and Elegance Unite to Elevate Your Event
+        </p>
+      </div>
+      <div className="w-full h-[80%] bg-green text-lg flex flex-col gap-y-10 lg:px-48 px-8 lg:text-left text-center pt-10">
+        <li>
+          <b>Promoting Professional Development:</b> Providing opportunities for
+          members to enhance their skills, knowledge, and competencies through
+          workshops, training sessions, and educational resources.
+        </li>
 
-    </div>
-    <div className="w-full h-[80%] bg-green text-lg flex flex-col gap-y-10 lg:px-48 px-8 lg:text-left text-center pt-10">
-      <li>
-        The Central Public Service Board was created sequel to the
-        acceptance of the Nigerianisation Commission Report of 1st January,
-        1949. The main function of this board was to interview and recommend
-        to the Governor-General, candidates from within and outside the
-        service for appointment or promotion.
-      </li>
+        <li>
+          <b>Facilitating Networking and Collaboration:</b> Creating a platform
+          for civil service employees to connect, share experiences, and
+          collaborate on projects and initiatives across different departments
+          and agencies.
+        </li>
 
-      <li>
-        The Board was made up of a Civil Service Commissioner, the Director
-        of Education or his representative and one official representative
-        of each of the Regional Boards. It was however, empowered to co-opt
-        two additional members, if need be.{" "}
-      </li>
+        <li>
+          <b>Advocating for Members:</b> Advocating for the interests, rights,
+          and well-being of civil service professionals, including issues
+          related to working conditions, benefits, and career advancement.
+        </li>
 
-      <li>
-        A caretaker Central Public Service Commission was constituted on 3rd
-        May, 1952 under the provision of section 169 of the Nigerian
-        Order-in-Council (Constitution) of 1951. This was a transitory body
-        to advice the Governor-General on issues affecting the Public
-        Service at his request.{" "}
-      </li>
+        <li>
+          <b>Fostering Camaraderie and Community:</b> Cultivating a sense of
+          belonging, camaraderie, and support among members through social
+          activities, events, and recreational opportunities.
+        </li>
 
-      {/* <p>
+        <li>
+          <b>Supporting Career Growth and Advancement:</b> Providing resources,
+          mentorship, and guidance to help members advance their careers and
+          achieve their professional goals within the federal government.
+        </li>
+
+        <li>
+          <b>Promoting Excellence and Innovation:</b> Encouraging excellence,
+          innovation, and continuous improvement within the federal civil
+          service sector through recognition programs, best practice sharing,
+          and collaborative initiatives.
+        </li>
+
+        <li>
+         <b>Enhancing Organizational Effectiveness:</b> Supporting the overall
+          effectiveness and success of the federal government by promoting a
+          skilled, motivated, and engaged workforce and fostering a culture of
+          excellence and accountability.
+        </li>
+
+        {/* <p>
         The Federal Public Service Commission was consequently established
         on the 1st of April, 1954 through a Provision under section 174 of
         Nigerian Order-in-Council (Constitution) of 1954. The order provided
@@ -64,9 +91,9 @@ const MembershipSection2 = () => {
         to certain grades. The name was later changed from Federal Public
         Service Commission to Federal ssion.
       </p> */}
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default MembershipSection2
+export default MembershipSection2;

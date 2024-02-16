@@ -2,10 +2,10 @@ import React from 'react'
 
 const MembershipSection1 = () => {
   return (
-    <div className="w-full lg:h-screen h-[150vh] flex lg:flex-row flex-col ">
+    <div className="w-full lg:h-screen h-[150vh] bg-yellow flex lg:flex-row flex-col ">
     <div className="lg:w-1/2 w-full lg:h-full h-[35%] flex justify-center items-center">
       <div className="lg:w-[29rem] w-[18rem] lg:h-[27rem] h-[18rem] bg-black rounded-xl">
-        <div className="w-full h-full bg-pink-500 rotate-[-20deg] rounded-xl border-white border-4 bg-[url('/images/event4.jpg')] bg-cover"></div>
+        <div className="w-full h-full bg-pink- rotate-[-20deg] rounded-xl border-white border-4 bg-[url('/images/event4.jpg')] bg-cover"></div>
       </div>
     </div>
     <div className="lg:w-1/2 w-full lg:h-full h-1/2 flex justify-center items-center">

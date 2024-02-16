@@ -159,6 +159,57 @@ export default function Gallery() {
           </div>
         </div>
 
+
+        <div className="w-full lg:h-[30rem] h-[50rem] bg-yellow- flex lg:px-40 lg:flex-row flex-col lg:pt-0 pt-10">
+          <div className="lg:w-[40%] w-full lg:h-full h-[30%] lg:px-0 px-7 bg-red- flex justify-center flex-col gap-y-6">
+            <p className={` lg:text-6xl text-5xl  text-left text-[#a12f27ff]  ${playFair.className}`}>Facilities</p>
+            <p className='lg:text-xl text-lg text-left'>
+              Get ready to feast at our Bar and Grill&apos;s food spot!
+              We&apos;re dishing out all your grill cravings and throwing in
+              some local vibes too. From classics to hometown faves, our
+              menu&apos;s stacked with flavor. Join us for a laid-back, tasty
+              time that&apos;s all about good eats and good vibes!
+            </p>
+          </div>
+          <div className="lg:w-[60%] w-full lg:h-full h-[50%] bg-blue-">
+            <swiper-container
+            style={{
+              height:'100%',
+              "--swiper-navigation-color": "#a12f27ff",
+              "--swiper-pagination-color": "#008000ff",
+
+
+            }}
+            className={styles.className}
+              pagination="true"
+              pagination-clickable="true"
+              navigation="true"
+              space-between="30"
+              centered-slides="true"
+              autoplay-delay="3000"
+              autoplay-disable-on-interaction="false"
+              
+            >
+              {facilitiesImages.map((image, index) => (
+              <swiper-slide key={index}>
+                <div className='w-full h-full flex justify-center items-center rounded-xl overflow-hidden'>
+                  <Image
+                    src={image}
+                    width={1000}
+                    height={1000}
+                    alt=""
+                    className="w-[70%] h-[70%]"
+                    objectFit="contain"
+                  />
+                </div>
+              </swiper-slide>
+
+              ))}
+              
+            </swiper-container>
+          </div>
+        </div>
+
      
         {/* <div className="w-full h-[40rem] bg-yellow-300 flex justify-center items-center px-7">
           <div className="w-[50%] h-[80%] bg-red-700 flex justify-center items-center">

@@ -69,8 +69,8 @@ const Section1 = () => {
 
     <div className="lg:w-1/2 w-full h-full  lg:flex hidden justify-center items-end  "  data-aos="fade-up">
       <div className="w-full px-16">
-        <div class="grid grid-cols-3 gap-4 ">
-          <div class="h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
+        <div className="grid grid-cols-3 gap-4 ">
+          <div className="h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
             <Image
               src={"/images/event1.jpg"}
               width={1000}
@@ -79,7 +79,7 @@ const Section1 = () => {
               className="w-full h-full"
             />
           </div>
-          <div class="col-span-2 h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
+          <div className="col-span-2 h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
             <Image
               src={"/images/event2.jpg"}
               width={1000}
@@ -88,7 +88,7 @@ const Section1 = () => {
               className="w-full h-full"
             />
           </div>
-          <div class="col-span-2 h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
+          <div className="col-span-2 h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
             <Image
               src={"/images/event3.jpg"}
               width={1000}
@@ -97,7 +97,7 @@ const Section1 = () => {
               className="w-full h-full"
             />
           </div>
-          <div class="  h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
+          <div className="  h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
             <Image
               src={"/images/event4.jpg"}
               width={1000}
@@ -106,7 +106,7 @@ const Section1 = () => {
               className="w-full h-full"
             />
           </div>
-          <div class=" h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
+          <div className=" h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
             <Image
               src={"/images/event5.jpg"}
               width={1000}
@@ -115,7 +115,7 @@ const Section1 = () => {
               className="w-full h-full"
             />
           </div>
-          <div class="col-span-2 h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
+          <div className="col-span-2 h-[10rem] bg-orange-500 rounded-xl overflow-hidden">
             <Image
               src={"/images/event1.jpg"}
               width={1000}
