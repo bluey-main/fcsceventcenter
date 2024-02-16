@@ -5,7 +5,7 @@ const playFair = Playfair_Display({ weight: "400", subsets: ["latin"] });
 
 const MembershipSection2 = () => {
   return (
-    <div className="w-full lg:min-h-[95vh] h-[130vh] bg-orange- pb-24">
+    <div className="w-full lg:min-h-[95vh] h-[130vh] bg-orange mb-40  pb-24">
       <div className="w-full lg:h-[20%] h-[10%] bg-red flex flex-col justify-center items-center gap-y-3 px-6 ">
         <p
           className={`lg:text-5xl text-4xl text-center font-bold ${playFair.className}`}
@@ -18,6 +18,35 @@ const MembershipSection2 = () => {
       </div>
       <div className="w-full h-[80%] bg-green text-lg flex flex-col gap-y-10 lg:px-48 px-8 lg:text-left text-center pt-10">
         <li>
+          Membership of the club shall be opened to all federal civil, public
+          servants, paramilitary and the armed forces.
+        </li>
+        <li>
+          All candidates for membership must be introduced by two active and
+          financially capable members who has personally known the candidate for
+          at least two years.
+        </li>
+        <li>
+          No application for membership shall be denied on the grounds of
+          culture, religion, class, sex or state of origin.
+        </li>
+        <li>
+          Membership of the club shall be opened to all federal civil, public
+          servants, paramilitary and the armed forces.
+        </li>
+        <p className="text-3xl font-bold">Admission Fees</p>
+
+        <li>
+          The admission fee for all categories of membership shall be a thousand
+          naira (#1000) only. It shall be legitimate for the club to demand
+          donation and levies in order to raise funds to support the club.
+        </li>
+
+        <li>
+          Every member shall pay the annual subscription on or before 31st march
+          of each financial year.
+        </li>
+        {/* <li>
           <b>Promoting Professional Development:</b> Providing opportunities for
           members to enhance their skills, knowledge, and competencies through
           workshops, training sessions, and educational resources.
@@ -60,7 +89,7 @@ const MembershipSection2 = () => {
           effectiveness and success of the federal government by promoting a
           skilled, motivated, and engaged workforce and fostering a culture of
           excellence and accountability.
-        </li>
+        </li> */}
 
         {/* <p>
         The Federal Public Service Commission was consequently established

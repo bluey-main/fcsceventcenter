@@ -16,7 +16,7 @@ const SportingSection1 = () => {
       <div className="lg:w-1/2 w-full lg:h-full h-1/2 flex justify-center items-center">
         <div className="w-full lg:h-[80%] h-full ">
           <div className="w-full lg:h-[20%] h-[30%] flex lg:justify-start  justify-center items-center ">
-            <p className={`text-5xl font-semibold text-center ${playFair.className}`}>Sporting Facilities</p>
+            <p className={`lg:text-5xl text-4xl font-semibold text-center ${playFair.className}`}>Sporting Facilities</p>
           </div>
           <div className="flex w-full  h-[80%]">
             <div className="w-[0.8%] h-full bg-gray-400 rounded-xl lg:block hidden"></div>

@@ -54,7 +54,7 @@ const Section4 = () => {
 
               <Link href={"/about"} data-aos="fade-left"
                 data-aos-duration="1200">
-                <p className="text-xl font-bold">Learn More</p>
+                <p className="text-xl font-bold text-custom-green">Learn More</p>
               </Link>
             </div>
           </div>

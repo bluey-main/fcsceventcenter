@@ -84,8 +84,8 @@ const Section6 = () => {
         data-aos="fade-left"
         data-aos-duration="1300"
       >
-        <div className="lg:w-[80%] w-[90%] lg:h-[90%] h-[90%] bg-[#FFDAB9] flex justify-between items-center lg:flex-row flex-col gap-x-6 rounded-md overflow-hidden lg:p-0 p-2">
-          <div
+        <div className="lg:w-[80%] w-[90%] lg:h-[90%] h-[90%] bg-[#FFDAB9] flex justify-center items-center lg:flex-row flex-col gap-x-6 rounded-md overflow-hidden lg:p-0 p-2">
+          {/* <div
             className="lg:w-[30%] w-[10rem] lg:h-full h-[10rem] bg-slate-300 lg:rounded-r-[50%] lg:rounded-none rounded-full overflow-hidden"
             style={{
               backgroundImage: `url(${testimonials[index].image})`,
@@ -96,15 +96,15 @@ const Section6 = () => {
               transitionDuration: "1s",
             }}
           >
-            {/* <Image
+            <Image
               src={`${testimonials[index].image}`}
               width={1000}
               height={1000}
               alt=""
               className="w-full h-full"
-            /> */}
-          </div>
-          <div className="lg:w-[60%] w-full lg:h-full h-1/2 bg-blue py-7">
+            />
+          </div> */}
+          <div className="lg:w-[70%] w-full lg:h-full h-1/2 bg-blue- py-7">
             <div className="w-full h-[20%] bg-pink">
               <div className="h-full w-16 bg-red">
                 <Image
@@ -116,7 +116,7 @@ const Section6 = () => {
                 />
               </div>
             </div>
-            <div className="w-full h-[60%] bg-purple px-3">
+            <div className="w-full h-[60%] bg-purple- px-3">
               <p
                 className={`${playFair.className} text-zinc-500 lg:text-lg text-base`}
               >

@@ -18,7 +18,7 @@ const NameCard = ({ imageUrl, name, role, duration, animation_duration }) => {
     >
       <div className="w-full h-full bg-[#00000067] flex flex-col justify-end gap-y-4 text-white px-7">
         <div className="">
-          <p className="text-5xl font-bold">{name}</p>
+          <p className="text-3xl font-bold uppercase">{name}</p>
         </div>
 
         <div className="mb-4">

@@ -108,7 +108,7 @@ const Navbar = () => {
           <div className="lg:w-[20%] w-full h-full py-10 flex lg:justify-center justify-start items-center">
             <Link href={"/contact"} onClick={closeMenu}>
               <div className="lg:w-[10rem] h-full w-[10rem]  text-white bg-custom-green flex p-3  justify-center items-center gap-x-3 rounded-xl lg:text-base text-base font-semibold">
-                <p>Join Now</p>
+                <p>Contact Us</p>
                 &#8594;
               </div>
             </Link>

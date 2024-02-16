@@ -31,6 +31,10 @@ export default function Gallery() {
     "/images/gallery/drinks/drink1.jpg",
     "/images/gallery/drinks/drink2.jpg",
     "/images/gallery/drinks/drink3.jpg",
+    "/images/gallery/drinks/drink4.jpg",  
+    "/images/gallery/drinks/drink5.jpg",
+    "/images/gallery/drinks/drink6.jpg",
+    "/images/gallery/drinks/drink7.jpg",
   ];
 
   const facilitiesImages = [
