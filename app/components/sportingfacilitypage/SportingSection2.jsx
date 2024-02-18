@@ -24,7 +24,7 @@ const SportingSection2 = () => {
           className="w-full h-full"
         >
           {responsive.map((item) => (
-            <div className="w-full h-full" key={item.id}>
+            <div className="w-full h-full flex justify-center items-center" key={item.id}>
               <Image
                 src={item.image}
                 width={1000}
