@@ -40,10 +40,10 @@ const Footer = () => {
           
         </Link>
         <div className="w-full h-[50%] bg-yellow flex justify-center items-center">
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit amet consectetur. Aliquam sit sed donec orci
             varius tristique habitant in donec. At ultrices sagittis
-          </p>
+          </p> */}
         </div>
         <div className="w-full h-[25%] bg-yellow flex gap-x-4">
           <div className="w-[3rem] h-[60%] bg-pink">
