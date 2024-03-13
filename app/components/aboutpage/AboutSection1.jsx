@@ -17,17 +17,18 @@ const AboutSection1 = () => {
             <div className="w-[0.8%] h-full bg-gray-400 rounded-xl lg:block hidden"></div>
             <div className="lg:w-[95%] w-full h-full  flex flex-col lg:justify-start lg:items-start justify-center items-center gap-y-5 rounded-xl lg:px-10 px-4">
               <p className="lg:text-lg text-lg lg:text-left text-center ">
-                Lorem ipsum dolor sit amet consectetur. Aliquam sit sed donec
-                orci varius tristique habitant in donec. <br /> <br /> At
-                ultrices sagittis ac eleifend sit gravida tristique mi cursus.
-                Vulputate pellentesque et in id. In tellus rutrum sagittis ut
-                vitae varius. <br /> <br /> Quis non cras enim mi justo cras
-                maecenas elit neque. Proin dignissim nunc augue aliquet dolor.{" "}
-                <br /> <br /> Ultrices commod o porttitor tortor eros tortor
-                blandit viverra euismod malesuada. At ultricies euismod
-                facilisis nulla. Etiam enim ante sit quis.a\\
+                Welcome to the Federal Civil Service Club, your hub for
+                camaraderie, growth, and excellence within the federal civil
+                service sector. <br /> <br />  At Federal Civil Service Club, we&apos;re dedicated
+                to uniting professionals from diverse backgrounds and agencies,
+                fostering a vibrant community where collaboration thrives and
+                careers flourish. <br /> <br /> Whether you&apos;re seeking networking
+                opportunities, professional development resources, or simply a
+                supportive community to connect with, you&apos;ve come to the right
+                place. Join us as we strive to elevate the standards and impact
+                of the federal civil service together.
               </p>
-              <p className="text-lg">Learn More</p>
+              {/* <p className="text-lg">Learn More</p> */}
             </div>
           </div>
         </div>
